@@ -277,6 +277,7 @@ module.exports = ToggleButton;
 - Autocomplete and autofocus on forms is still clunky.
 - Sometimes you need a `setTimeout` inside of `componenDidMount`. Like when using non-react modules, or are using [velocity](http://julian.com/research/velocity/) for animations.
 - Can render and animate SVGs but some animation attributes are still unsupported.
+- [Be wary](https://medium.com/@goatslacker/react-0-13-x-and-autobinding-b4906189425d) of `this` context when using React's new class style
 
 --
 
