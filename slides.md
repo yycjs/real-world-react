@@ -123,7 +123,6 @@ The component just displays some state, doesn't manipulate it.
 
 ```javascript
 var React = require('react');
-
 var Button = React.createClass({
 	propTypes: {
 		title: React.PropTypes.string,
@@ -149,22 +148,18 @@ When the component manipulates its own internal state.
 ```javascript
 var React = require('react');
 var cx = require('classnames');
-
 var ToggleButton = React.createClass({
 	propTypes: {
 		title: React.PropTypes.string,
 		onClick: React.PropTypes.func
 	},
-
 	getInitialState: function(){
 		return { clicked: false };
 	},
-
 	_onClick: function(){
 		this.setState({ clicked: !this.state.clicked });
 		this.props.onClick.call(arguments);
 	},
-
 	render: function(){
 		var classes = cx({
 			"toggle-button": true,

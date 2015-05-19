@@ -670,7 +670,6 @@ ul {
     <section class="slide-content"><h2 id="a-dumb-component">A Dumb Component</h2>
 <p>The component just displays some state, doesn&#39;t manipulate it.</p>
 <pre><code class="lang-javascript"><span class="keyword">var</span> React = require(<span class="string">'react'</span>);
-
 <span class="keyword">var</span> Button = React.createClass({
     propTypes: {
         title: React.PropTypes.string,
@@ -692,22 +691,18 @@ module.exports = Button;</span></code></pre>
 <p>When the component manipulates its own internal state.</p>
 <pre><code class="lang-javascript"><span class="keyword">var</span> React = require(<span class="string">'react'</span>);
 <span class="keyword">var</span> cx = require(<span class="string">'classnames'</span>);
-
 <span class="keyword">var</span> ToggleButton = React.createClass({
     propTypes: {
         title: React.PropTypes.string,
         onClick: React.PropTypes.func
     },
-
     getInitialState: <span class="keyword">function</span>(){
         <span class="keyword">return</span> { clicked: <span class="literal">false</span> };
     },
-
     _onClick: <span class="keyword">function</span>(){
         <span class="keyword">this</span>.setState({ clicked: !<span class="keyword">this</span>.state.clicked });
         <span class="keyword">this</span>.props.onClick.call(arguments);
     },
-
     render: <span class="keyword">function</span>(){
         <span class="keyword">var</span> classes = cx({
             <span class="string">"toggle-button"</span>: <span class="literal">true</span>,
