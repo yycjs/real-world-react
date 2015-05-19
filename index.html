@@ -678,7 +678,7 @@ ul {
 
     render: <span class="keyword">function</span>(){
         <span class="keyword">return</span> (
-            <span class="xml"><span class="tag">&lt;<span class="title">button</span> <span class="attribute">className</span>=<span class="value">"button"</span> <span class="attribute">onClick</span>=<span class="value">{this.props.onClick}</span>&gt;</span>this.props.title<span class="tag">&lt;/<span class="title">button</span>&gt;</span>
+            <span class="xml"><span class="tag">&lt;<span class="title">button</span> <span class="attribute">className</span>=<span class="value">"button"</span> <span class="attribute">onClick</span>=<span class="value">{this.props.onClick}</span>&gt;</span>{this.props.title}<span class="tag">&lt;/<span class="title">button</span>&gt;</span>
         );
     }
 });
@@ -701,7 +701,7 @@ module.exports = Button;</span></code></pre>
     },
     _onClick: <span class="keyword">function</span>(){
         <span class="keyword">this</span>.setState({ clicked: !<span class="keyword">this</span>.state.clicked });
-        <span class="keyword">this</span>.props.onClick.call(arguments);
+        <span class="keyword">this</span>.props.onClick.apply(<span class="literal">null</span>, arguments);
     },
     render: <span class="keyword">function</span>(){
         <span class="keyword">var</span> classes = cx({
@@ -710,7 +710,7 @@ module.exports = Button;</span></code></pre>
         });
 
         <span class="keyword">return</span> (
-            <span class="xml"><span class="tag">&lt;<span class="title">button</span> <span class="attribute">className</span>=<span class="value">{classes}</span> <span class="attribute">onClick</span>=<span class="value">{this._onClick}</span>&gt;</span>this.props.title<span class="tag">&lt;/<span class="title">button</span>&gt;</span>
+            <span class="xml"><span class="tag">&lt;<span class="title">button</span> <span class="attribute">className</span>=<span class="value">{classes}</span> <span class="attribute">onClick</span>=<span class="value">{this._onClick}</span>&gt;</span>{this.props.title}<span class="tag">&lt;/<span class="title">button</span>&gt;</span>
         );
     }
 });

@@ -131,7 +131,7 @@ var Button = React.createClass({
 
 	render: function(){
 		return (
-			<button className="button" onClick={this.props.onClick}>this.props.title</button>
+			<button className="button" onClick={this.props.onClick}>{this.props.title}</button>
 		);
 	}
 });
@@ -158,7 +158,7 @@ var ToggleButton = React.createClass({
 	},
 	_onClick: function(){
 		this.setState({ clicked: !this.state.clicked });
-		this.props.onClick.call(arguments);
+		this.props.onClick.apply(null, arguments);
 	},
 	render: function(){
 		var classes = cx({
@@ -167,7 +167,7 @@ var ToggleButton = React.createClass({
 		});
 
 		return (
-			<button className={classes} onClick={this._onClick}>this.props.title</button>
+			<button className={classes} onClick={this._onClick}>{this.props.title}</button>
 		);
 	}
 });
