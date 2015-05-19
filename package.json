@@ -1,24 +1,20 @@
 {
-  "name": "slide-template",
-  "description": "The YYCJS slide template",
-  "version": "0.3.1",
+  "name": "feathers-react-chat",
+  "description": "An example chat application using React + Flux + Feathers",
+  "version": "1.0.0",
   "private": true,
   "homepage": "http://yycjs.com",
   "repository": {
     "type": "git",
-    "url": "git@github.com:yycjs/slide-template.git"
+    "url": "git@github.com:yycjs/real-world-react.git"
   },
   "engines": {
-    "node": "~0.10.0"
-  },
-  "devDependencies": {
-    "cleaver": "^0.7.4",
-    "grunt": "^0.4.5",
-    "grunt-contrib-watch": "^0.6.1",
-    "grunt-exec": "^0.4.6"
+    "node": ">=0.10.0"
   },
   "scripts": {
-    "start": "grunt"
   },
-  "dependencies": {}
+  "dependencies": {
+  },
+  "devDependencies": {
+  }
 }

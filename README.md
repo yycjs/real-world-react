@@ -1,14 +1,29 @@
-# `The ${perfect} JavaScript project`
+Feathers + React + Flux Chat
+==================================
 
-At this meetup we will have a look at the most recent best practises for setting up and maintaining a JavaScript open source project and why you should run your own projects the same way - even if it isn't open source.
+> An example chat application using [React](https://facebook.github.io/react/) + [Flux](https://facebook.github.io/flux/) + [Feathers](http://feathersjs.com)
 
-We will look at
+## Getting Started
 
-- Git and GitHub 
-- Feature branches, versioning and milestones
-- Pull requests and code review
-- Build steps
-- Code quality checking
-- Folder layout
-- Continuous integration
-- Deployment
+1. Install [homebrew](http://brew.sh)
+2. Install [NodeJS](http://nodejs.org) and [npm](http://npmjs.org)
+
+    ```
+    brew install nodejs
+    ```
+
+3. Install dependencies
+
+    ```
+    npm install
+    ```
+
+4. Start the app.
+
+    ```
+    npm start
+    ```
+
+    This will start your dev server, watch the files and recompile them every time they change.
+
+5. Navigate to [http://localhost:1337/](http://localhost:1337/).
