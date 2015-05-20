@@ -105,7 +105,7 @@ For more info see [here](http://stackoverflow.com/questions/21109361/why-is-reac
 
 ## JSX
 
-Define all of your component in **one file**. Template, logic, and you can even do styles.
+Define all of your component in **one file**. Template, logic, and you can [even do styles](http://projects.formidablelabs.com/radium/).
 
 -- image
 
@@ -295,10 +295,7 @@ module.exports = ToggleButton;
 
 # Next Month
 
+- The next meetup will be on June 2nd
+- We will have special guest [Alexis Abril](https://twitter.com/alexisabril) from [DallasJS](http://www.meetup.com/DallasJS/) and [Bitovi](http://bitovi.com/).
 - Brief intro to [Ethereum](https://www.ethereum.org) by Derek.
-- Wanna talk? Come on up!
-- Some possible topics:
-	- React Native
-	- Feathers release/demo
-	- Building native desktop apps
-	- Using SVG's to make your app sexy
+- July 7th will be Dave's last meet-up because he is moving to Vancouver :-(
